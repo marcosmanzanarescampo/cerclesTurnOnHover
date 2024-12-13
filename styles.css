@@ -1,0 +1,25 @@
+/* .loader{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    animation: Turn 1.5s infinite;
+} */
+
+.spinBox{
+    width: 100px; height: 100px;
+    margin: 5px;
+    background-color: blueviolet;
+}
+
+
+
+@keyframes spin{
+    100%{transform: rotate(360deg)}
+    100%{border-radius: 50%};
+    100%{transform: scale(0.7);}
+    100%{background-color: brown;}
+}
+
+.spinBox:hover{
+    animation: spin 0.8s infinite forwards;
+}
